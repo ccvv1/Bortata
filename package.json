@@ -1,9 +1,11 @@
-{
-  "name": "autocommentbot",
-  "version": "1.0.0",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "start": "node index.js"
-  }
-}
+const express = require("express");
+const app = express();
+
+app.get("/", (req, res) => {
+  res.send("Bot is running!");
+});
+
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
+  console.log("Server running on port " + port);
+});
