@@ -1,0 +1,9 @@
+{
+  "name": "autocommentbot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
